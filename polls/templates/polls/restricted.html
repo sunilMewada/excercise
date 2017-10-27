@@ -1,0 +1,9 @@
+{% if latest_excercise_list %}
+    <ul>
+    {% for Excercise in latest_excercise_list %}
+        <li>{{ Excercise.application }}</a></li>
+    {% endfor %}
+    </ul>
+{% else %}
+    <p>No polls are available.</p>
+{% endif %}
